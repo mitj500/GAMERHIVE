@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+body{
+  background: #000000;
+}
+
+.bx{
+  cursor: pointer;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+a{
+  text-decoration: none;
+
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+  flex: 1;
+  position: relative;
+  right: 10 px;
+  padding-top: 12px;
+
+}
+
+.logo {
+  font-size: 30px;
+  color: #4dbf00;
+}
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-text-container {
+  margin: 0 20px;
+}
+.profile-text:hover{
+  color: #f4b906;
+}
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/*main pg*/
+.container {
+  background-color: #0e0d0d;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 80px;
+}
+
+.featured-content {
+  height: 50vh;
+  padding: 50px;
+}
+
+.featured-title {
+  width: 200px;
+}
+
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+}
+
+.featured-button {
+  background-color: #4dbf00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.movie-list-container {
+  padding: 0 20px;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie-list-item-title {
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: #4dbf00;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+/*nav bar*/
+.sidebar{
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.1rem;
+
+}
+.nav-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4b906;
+}
+.nav-link:hover,
+.nav-active {
+    color: #fff701;
+    transition: 0.3s all liner;
+    transform: scale(1.1);
+}
+.nav-link .bx{
+    font-size: 1.6rem;
+}
+.nav-link-title{
+    font-size: 0.7rem;
+}
+.nav-heart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4b906;
+}
+.nav-link-heart{
+  font-size: 0.7rem;
+}
+.nav-heart:hover{
+  color: rgb(170, 20, 20);
+}
+.nav-link-heart:hover{
+  color: rgb(170, 20, 20);
+}
+.bxs-heart:hover{
+  color: rgb(170, 20, 20);
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}

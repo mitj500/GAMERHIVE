@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css-->
+    <link rel="stylesheet" href="login.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="" href="img/android-chrome-512x512.png">
+    <title>Login</title>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="index.php"><img src="img/logo_without_bg.png" style="width: 200px;"></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--Side Bar-->
+    <div class="sidebar">
+        <a href="index.php" class="nav-link">
+            <i class='bx bxs-home-alt-2' ></i>
+            <span class="nav-link-title">Home</span>
+        </a>   
+        <a href="favorites.php" class="nav-link">
+            <i class='bx bxs-heart'></i>
+            <span class="nav-link-title">Favourites</span>
+        </a>
+        <a href="eventsfinal.php" class="nav-link">
+            <i class='bx bxs-news'></i>
+            <span class="nav-link-title">Events</span>
+        </a>
+        <a href="Top100.php" class="nav-link">
+            <i class='bx bxs-trophy'></i>
+            <span class="nav-link-title">Top 50</span>
+        </a>
+        <a href="aboutus.php" class="nav-link">
+        <i class='bx bxs-game'></i>
+            <span class="nav-link-title">About Us</span>
+        </a>
+    </div>
+    <!--Login-->
+        <div class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="index.php" method="post"> 
+                        <div class="social"> 
+                        <a href="#"><i class='bx bxl-google'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a> 
+                        <a href="#"><i class='bx bxl-twitch' ></i></a>  
+                    </div>
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" id="email" name="email" class="input" pattern="[a-z]{}@gmail.com,yahoo.com,hotmail.com" required>
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" id="password" name="password" class="password" pattern="[a-z]{}"required>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        <div class="field button-field">
+                            <button type="submit" id = "submit" name = "submit">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Register</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Register</header>
+                    <form action="connection.php" method="post"> 
+                        <div class="social"> 
+                            <a href="#"><i class='bx bxl-google'></i></a>
+                            <a href="#"><i class='bx bxl-facebook'></i></a> 
+                            <a href="#"><i class='bx bxl-twitch' ></i></a>  
+                        </div>
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" id="email" name="email"class="input" pattern="[a-z]{}@gmail.com,yahoo.com,hotmail.com" required>
+                        </div>
+                        <div class="field input-field">
+                            <input type="text" name="username" placeholder="Username">
+                        </div>
+                        <div class="field input-field">
+                                <input type="tel" id="phone" name="phone" placeholder="Enter Mobile Number" required><br><br>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="text" name="dob" placeholder="D.O.B.: DD/MM/YYYY" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Enter password" id="password" name="password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="login.js"></script>
+    </body>
+</html>

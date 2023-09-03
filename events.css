@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f4b906; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#fff701; 
+}
+body{
+  background: #000000;
+}
+
+.bx{
+  cursor: pointer;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+a{
+  text-decoration: none;
+
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+.logo-container {
+    flex: 1;
+    position: relative;
+    right: 10 px;
+    padding-top: 12px;
+  
+}
+  
+.logo {
+    font-size: 30px;
+    color: #4dbf00;
+}
+.profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
+.profile-text-container {
+    margin: 0 20px;
+}
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.eventscont{
+   
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+  
+.econtent-container {
+    margin-left: 80px;
+    background: url("img/bee5.jpg") no-repeat center center/cover; 
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+/* side bar*/
+.sidebar{
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.1rem;
+
+}
+.nav-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4b906;
+}
+.nav-link:hover,
+.nav-active {
+  color: #fff701;
+  transition: 0.3s all liner;
+  transform: scale(1.1);
+}
+.nav-link .bx{
+  font-size: 1.6rem;
+}
+.nav-link-title{
+  font-size: 0.7rem;
+}
+.nav-heart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4b906;
+}
+.nav-link-heart{
+  font-size: 0.7rem;
+}
+.nav-heart:hover{
+  color: rgb(170, 20, 20);
+}
+.nav-link-heart:hover{
+  color: rgb(170, 20, 20);
+}
+.bxs-heart:hover{
+  color: rgb(170, 20, 20);
+}
+
+
+/*   code for the events*/
+header {
+    
+  color : #fcc614;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 150px;
+ }
+  body {
+    background: url("img/bee5.jpg") no-repeat center center/cover; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+       background: linear-gradient(to bottom, #33e96a, #f1f1f1);
+    border: 5px solid #26774f;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 400px;
+    height: 550px;
+  }
+  
+ 
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  .container-image {
+    padding: 10px;
+  }
+
+  .container-image img {
+    width: 100%;
+    height: 150px;
+    object-fit:cover;
+    margin-bottom: 10px;
+  }
+
+  .container-text {
+    padding: 10px;
+  }
+
+  .container-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .container-text p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .container-button {
+    padding: 10px;
+  }
+  .button {
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.button2 {
+background-color: white; 
+color: black; 
+border: 2px solid #008CBA;
+}
+
+.button2:hover {
+background-color: #008CBA;
+color: white;
+}
+
+  .footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  }
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}

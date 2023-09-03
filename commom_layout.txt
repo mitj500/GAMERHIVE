@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css-->
+    <link rel="stylesheet" href="Top100style.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="" href="img/android-chrome-512x512.png">
+    <title> </title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="img/logo_without_bg.png" width="200px"></a>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <a href="login.html" style="color: whitesmoke;"><span class="profile-text">Profile</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Side Bar-->
+    <div class="sidebar">
+        <a href="index.html" class="nav-link">
+            <i class='bx bxs-home-alt-2' ></i>
+            <span class="nav-link-title">Home</span>
+        </a>
+        <a href="#home" class="nav-link">
+            <i class='bx bxs-game'></i>
+            <span class="nav-link-title">Category</span>
+        </a>
+        <a href="#home" class="nav-link">
+            <i class='bx bxs-heart'></i>
+            <span class="nav-link-title">Favourites</span>
+        </a>
+        <a href="#home" class="nav-link">
+            <i class='bx bxs-news'></i>
+            <span class="nav-link-title">Events</span>
+        </a>
+        <a href="#home" class="nav-link">
+            <i class='bx bxs-trophy'></i>
+            <span class="nav-link-title">Top 50</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="content-container">
+</body>
+</html>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+body{
+  background: #000000;
+}
+
+.bx{
+  cursor: pointer;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+a{
+  text-decoration: none;
+
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+.logo-container {
+    flex: 1;
+    position: relative;
+    right: 10 px;
+    padding-top: 12px;
+  
+}
+  
+.logo {
+    font-size: 30px;
+    color: #4dbf00;
+}
+.profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
+.profile-text-container {
+    margin: 0 20px;
+}
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.container {
+    background-color: #0e0d0d;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+  
+.content-container {
+    margin-left: 80px;
+}
+/*nav bar*/
+.sidebar{
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.1rem;
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4b906;
+}
+.nav-link:hover,
+.nav-active {
+    color: #fff701;
+    transition: 0.3s all liner;
+    transform: scale(1.1);
+}
+.nav-link .bx{
+    font-size: 1.6rem;
+}
+.nav-link-title{
+    font-size: 0.7rem;
+}
+.nav-heart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4b906;
+}
+.nav-link-heart{
+    font-size: 0.7rem;
+}
+.nav-heart:hover{
+    color: rgb(170, 20, 20);
+}
+.nav-link-heart:hover{
+    color: rgb(170, 20, 20);
+}
+.bxs-heart:hover{
+    color: rgb(170, 20, 20);
+}
+  
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}

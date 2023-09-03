@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+body{
+    background: url("img/bee5.jpg") no-repeat center center/cover; 
+    font-family: poppins; 
+    font-size: 1rem; 
+    overflow: hidden;
+    
+}
+
+.bx{
+  cursor: pointer;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+}
+a{
+  text-decoration: none;
+
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+.logo-container {
+    flex: 1;
+    position: relative;
+    right: 10 px;
+    padding-top: 8px;
+  
+}
+  
+.logo {
+    font-size: 30px;
+    color: #4dbf00;
+}
+.profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
+.profile-text-container {
+    margin: 0 20px;
+}
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.container {
+    position: relative; 
+    left: 35.5%; 
+    transform: translate(-50% -50%);
+    width: 28rem;
+    min-height: calc(100vh - 50px);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    bottom: 10%;
+    right: 4%
+}
+  
+.content-container {
+    margin-left: 80px;
+}
+/*nav bar*/
+.sidebar{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+  
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4b906;
+}
+.nav-link:hover,
+.nav-active {
+    color: #fff701;
+    transition: 0.3s all liner;
+    transform: scale(1.1);
+}
+.nav-link .bx{
+    font-size: 1.6rem;
+}
+.nav-link-title{
+    font-size: 0.7rem;
+}
+.nav-heart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4b906;
+}
+.nav-link-heart{
+    font-size: 0.7rem;
+}
+.nav-heart:hover{
+    color: rgb(170, 20, 20);
+}
+.nav-link-heart:hover{
+    color: rgb(170, 20, 20);
+}
+.bxs-heart:hover{
+    color: rgb(170, 20, 20);
+}
+/*page*/
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 3rem 2rem;  
+    border-radius: 1rem;
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+header{
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    background: whitesmoke;
+}
+.field input:focus{
+    border-bottom-width: 2px;
+}
+.field input::placeholder{
+    color: rgb(0, 0, 0);
+}
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #373636;
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+    color: #fff;
+    background-color: #46a9ff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #195285;
+    text-decoration: none;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+.form a{
+    color: #f4b906;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+/*Social Platform*/
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.social a {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 300ms ease;
+}
+
+.social a:hover {
+    background:white;
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 20px 10px;
+    }
+    
+}
